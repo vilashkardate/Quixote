@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .division{
+            display: flex;
+            margin-bottom: 8px;
+        }
+        .right{
+            font-size: 20px;
+    font-weight: 400;
+    font-family: sans-serif;
+    letter-spacing: 0.03em;
+    color: #0d33cd;
+    padding-left: 16px;
+    }
+        .left{
+            font-size: 20px;
+    font-weight: 500;
+    font-family: sans-serif;
+    letter-spacing: 0.03em;
+        }
+        .img{
+            width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+        }
+        .container{
+            display: flex;
+            align-items: flex-start;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+<div style="display:table-cell; vertical-align:middle; text-align:center">
+
+    <img class="img" src={{ link }} alt="" srcset="">
+
+</div>
+<div style="padding-left: 30px;">
+<div class="division">
+<div class="left"> 
+    Size: </div> <span class="right"> {{ items.size }}</span></div>
+<div class="division">
+    <div class="left"> 
+        Resolition: </div> <span class="right"> {{ items.resolution }}</span></div>
+
+        <div class="division">
+            <div class="left"> 
+                Timestamp: </div> <span class="right"> {{ items.timestamp }}</span></div>
+    
+                <div class="division">
+                    <div class="left"> 
+                        Filename: </div> <span class="right"> {{ items.filename }}</span></div> 
+
+                <div class="division">
+                    <div class="left"> 
+                        File Extension: </div> <span class="right"> {{ items.file_extension }}</span></div> 
+
+
+</div>
+</div>
+</body>
+</html>
